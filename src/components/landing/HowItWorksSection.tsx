@@ -1,0 +1,75 @@
+import { UserPlus, PlusCircle, Eye } from "lucide-react";
+
+const steps = [
+  {
+    icon: UserPlus,
+    step: "01",
+    title: "Create Account",
+    description: "Sign up in seconds with just your email. No credit card or bank info needed.",
+  },
+  {
+    icon: PlusCircle,
+    step: "02",
+    title: "Add Investments",
+    description: "Manually enter your assets: crypto, stocks, funds, ETFs, and bank balances.",
+  },
+  {
+    icon: Eye,
+    step: "03",
+    title: "Track & Analyze",
+    description: "View your complete portfolio with beautiful charts and real-time analytics.",
+  },
+];
+
+const HowItWorksSection = () => {
+  return (
+    <section id="how-it-works" className="py-32 relative overflow-hidden">
+      <div className="absolute inset-0 grid-bg opacity-20" />
+      <div className="glow-orb w-[600px] h-[600px] bg-accent/20 bottom-0 left-1/2 -translate-x-1/2 animate-pulse-slow" />
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
+            How It <span className="text-gradient">Works</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Get started in three simple steps. Your complete portfolio view is just minutes away.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {steps.map((step, index) => (
+            <div key={index} className="relative">
+              {/* Connector line */}
+              {index < steps.length - 1 && (
+                <div className="hidden md:block absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+              )}
+              
+              <div className="text-center relative z-10">
+                {/* Step number */}
+                <div className="font-display text-6xl font-bold text-primary/20 mb-4">
+                  {step.step}
+                </div>
+                
+                {/* Icon */}
+                <div className="w-20 h-20 rounded-2xl bg-primary/20 neon-border flex items-center justify-center mx-auto mb-6 animate-glow">
+                  <step.icon className="w-10 h-10 text-primary" />
+                </div>
+                
+                {/* Content */}
+                <h3 className="font-display text-2xl font-bold mb-4 text-foreground">
+                  {step.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorksSection;
