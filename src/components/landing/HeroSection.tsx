@@ -74,6 +74,8 @@ const HeroSection = () => {
               src={dashboardPreview} 
               alt="My Invest Dashboard - Visualização do patrimônio, investimentos e lucros" 
               className="w-full h-auto rounded-xl"
+              style={{ imageRendering: 'auto', WebkitBackfaceVisibility: 'hidden' }}
+              loading="eager"
             />
           </div>
           {/* Glow effect behind the image */}
