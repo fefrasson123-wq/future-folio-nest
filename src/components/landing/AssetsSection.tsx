@@ -6,7 +6,6 @@ import {
   PieChart, 
   Landmark 
 } from "lucide-react";
-import newInvestmentPreview from "@/assets/new-investment-preview.png";
 
 const assets = [
   {
@@ -85,27 +84,6 @@ const AssetsSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* App Preview - New Investment Screen */}
-        <div className="mt-20 flex flex-col items-center">
-          <h3 className="font-display text-2xl md:text-3xl font-bold mb-4 text-center">
-            Adicione investimentos em <span className="text-gradient">segundos</span>
-          </h3>
-          <p className="text-muted-foreground text-center mb-8 max-w-lg">
-            Interface simples e intuitiva para registrar todos os tipos de ativos
-          </p>
-          <div className="relative max-w-md mx-auto animate-float" style={{ animationDelay: '0.5s' }}>
-            <div className="glass-card neon-border p-2 rounded-2xl overflow-hidden">
-              <img 
-                src={newInvestmentPreview} 
-                alt="Tela de Novo Investimento - Escolha entre ações, fundos imobiliários, criptomoedas e mais" 
-                className="w-full h-auto rounded-xl"
-              />
-            </div>
-            {/* Glow effect behind the image */}
-            <div className="absolute -inset-4 bg-primary/15 blur-3xl rounded-3xl -z-10" />
-          </div>
         </div>
       </div>
     </section>
