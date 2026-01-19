@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap } from "lucide-react";
+import dashboardPreview from "@/assets/dashboard-preview.png";
 
 const HeroSection = () => {
   return (
@@ -68,29 +69,15 @@ const HeroSection = () => {
 
         {/* Floating dashboard preview */}
         <div className="mt-16 relative max-w-5xl mx-auto animate-float">
-          <div className="glass-card neon-border p-6 rounded-2xl">
-            <div className="grid grid-cols-4 gap-4 mb-6">
-              {["Crypto", "Stocks BR", "ETFs", "FIIs"].map((label, i) => (
-                <div key={i} className="bg-secondary/50 rounded-lg p-4 text-center">
-                  <div className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{label}</div>
-                  <div className="font-display text-lg font-bold text-primary">
-                    R$ {((i + 1) * 12500).toLocaleString()}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="h-32 bg-secondary/30 rounded-lg flex items-center justify-center">
-              <div className="flex items-end gap-2 h-20">
-                {[40, 65, 45, 80, 55, 90, 70, 85, 60, 95, 75, 88].map((height, i) => (
-                  <div
-                    key={i}
-                    className="w-6 bg-gradient-to-t from-primary/50 to-primary rounded-t transition-all duration-300 hover:from-primary/70 hover:to-accent"
-                    style={{ height: `${height}%` }}
-                  />
-                ))}
-              </div>
-            </div>
+          <div className="glass-card neon-border p-2 rounded-2xl overflow-hidden">
+            <img 
+              src={dashboardPreview} 
+              alt="My Invest Dashboard - Visualização do patrimônio, investimentos e lucros" 
+              className="w-full h-auto rounded-xl"
+            />
           </div>
+          {/* Glow effect behind the image */}
+          <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-3xl -z-10" />
         </div>
       </div>
     </section>
