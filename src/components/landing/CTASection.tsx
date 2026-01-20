@@ -18,15 +18,14 @@ const CTASection = () => {
             <span className="text-sm text-primary font-medium">Comece gratuitamente hoje</span>
           </div>
 
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            Pronto para Assumir
+          <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Pare de espalhar seus investimentos.
             <br />
-            <span className="text-gradient">o Controle?</span>
+            <span className="text-gradient">Centralize tudo.</span>
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Junte-se a milhares de investidores que acompanham seus portfólios com o My Invest. 
-            Sem taxas ocultas, sem configurações complicadas, apenas controle total sobre seus investimentos.
+            Organize seu patrimônio de forma simples e segura.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
