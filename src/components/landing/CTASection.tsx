@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id="cta-section" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30" />
       
       {/* Multiple glow orbs for dramatic effect */}
@@ -15,29 +15,31 @@ const CTASection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">Start for free today</span>
+            <span className="text-sm text-primary font-medium">Comece gratuitamente hoje</span>
           </div>
 
           <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            Ready to Take
+            Pronto para Assumir
             <br />
-            <span className="text-gradient">Control?</span>
+            <span className="text-gradient">o Controle?</span>
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Join thousands of investors who track their portfolios with My Invest. 
-            No hidden fees, no complicated setup, just pure control over your investments.
+            Junte-se a milhares de investidores que acompanham seus portfólios com o My Invest. 
+            Sem taxas ocultas, sem configurações complicadas, apenas controle total sobre seus investimentos.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="lg">
-              Create Free Account
-              <ArrowRight className="w-5 h-5" />
+            <Button variant="hero" size="lg" asChild>
+              <a href="/signup">
+                Criar Conta Grátis
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
           </div>
 
           <p className="text-muted-foreground text-sm mt-8">
-            No credit card required • Free forever for basic tracking
+            Sem cartão de crédito • Grátis para sempre no plano básico
           </p>
         </div>
       </div>
