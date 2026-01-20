@@ -48,13 +48,12 @@ const HeroSection = () => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto animate-fade-in-up" style={{
+          <div className="flex justify-between gap-8 mt-20 max-w-2xl mx-auto animate-fade-in-up" style={{
             animationDelay: '0.6s'
           }}>
           {[{
               value: "+10",
-              label: "Categorias de",
-              sublabel: "Investimentos"
+              label: "Categorias de Investimentos"
             }, {
               value: "+500",
               label: "Usuários Ativos"
@@ -65,7 +64,6 @@ const HeroSection = () => {
                 </div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider">
                   {stat.label}
-                  {stat.sublabel && <><br />{stat.sublabel}</>}
                 </div>
               </div>
             ))}
