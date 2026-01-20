@@ -1,24 +1,17 @@
 import { Users, Target, Smartphone } from "lucide-react";
 import dashboardPreview from "@/assets/dashboard-preview.png";
-
-const credentials = [
-  {
-    icon: Users,
-    text: "Criado por investidores",
-  },
-  {
-    icon: Target,
-    text: "Feito para quem investe de verdade",
-  },
-  {
-    icon: Smartphone,
-    text: "Pensado para quem já investe em mais de um lugar",
-  },
-];
-
+const credentials = [{
+  icon: Users,
+  text: "Criado por investidores"
+}, {
+  icon: Target,
+  text: "Feito para quem investe de verdade"
+}, {
+  icon: Smartphone,
+  text: "Pensado para quem já investe em mais de um lugar"
+}];
 const CredibilitySection = () => {
-  return (
-    <section className="py-24 relative overflow-hidden">
+  return <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -30,37 +23,20 @@ const CredibilitySection = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {credentials.map((cred, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-4 glass-card p-6 rounded-xl border border-primary/20 hover:border-primary/40 transition-colors"
-              >
+            {credentials.map((cred, index) => <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-xl border border-primary/20 hover:border-primary/40 transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <cred.icon className="w-6 h-6 text-primary" />
                 </div>
                 <p className="text-foreground font-medium">
                   {cred.text}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
           
           {/* App Preview */}
-          <div className="relative">
-            <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
-            <div className="glass-card neon-border p-2 rounded-2xl overflow-hidden relative">
-              <img 
-                src={dashboardPreview} 
-                alt="My Invest Dashboard - Visualização real do aplicativo" 
-                className="w-full h-auto rounded-xl"
-                loading="lazy"
-              />
-            </div>
-          </div>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CredibilitySection;
