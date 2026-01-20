@@ -11,7 +11,7 @@ const problems = [
   },
   {
     icon: HelpCircle,
-    text: "Nunca sabe seu patrimônio total real",
+    text: "Nunca sabe exatamente quanto tem investido",
   },
 ];
 
