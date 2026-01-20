@@ -58,7 +58,7 @@ const HeroSection = () => {
               value: "+500",
               label: "Usuários Ativos"
             }].map((stat, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className={index === 0 ? "text-left" : "text-right"}>
                 <div className="font-display text-3xl md:text-4xl font-bold neon-text mb-2">
                   {stat.value}
                 </div>
