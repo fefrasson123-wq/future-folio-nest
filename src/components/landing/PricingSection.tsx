@@ -22,7 +22,7 @@ const plans = {
   },
   premium: {
     name: "Premium",
-    price: "R$ 99,90",
+    price: "R$ 79,90",
     period: "/mês",
     description: "Controle total",
     features: ["Tudo do Pro", "Suporte prioritário", "Alertas personalizados", "API de integração", "Multi-usuários", "Relatórios personalizados"],
@@ -54,9 +54,9 @@ const PricingSection = () => {
           
           {Object.entries(plans).map(([key, plan]) => <TabsContent key={key} value={key} className="mt-0">
               <div className={`glass-card p-8 md:p-12 rounded-2xl max-w-2xl mx-auto ${plan.popular ? 'neon-border-intense' : 'border border-border/50'}`}>
-                {plan.popular && <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-primary/30 to-primary/10 border border-primary shadow-[0_0_20px_rgba(0,255,136,0.3)] mb-6 animate-pulse-slow">
-                    <span className="w-2 h-2 rounded-full bg-primary animate-glow" />
-                    <span className="text-sm text-primary font-bold uppercase tracking-wider">Mais Popular</span>
+                {plan.popular && <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/60 shadow-[0_0_12px_rgba(0,255,136,0.15)] mb-6">
+                    <span className="w-2 h-2 rounded-full bg-primary/80" />
+                    <span className="text-sm text-primary font-semibold uppercase tracking-wider">Mais Popular</span>
                   </div>}
                 
                 <div className="text-center mb-8">
