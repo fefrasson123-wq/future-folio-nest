@@ -56,9 +56,6 @@ const HeroSection = () => {
               label: "Categorias de",
               sublabel: "Investimentos"
             }, {
-              value: "100%",
-              label: "Privado"
-            }, {
               value: "+500",
               label: "Usuários Ativos"
             }].map((stat, index) => (
