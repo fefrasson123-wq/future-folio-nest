@@ -34,7 +34,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-in-up leading-relaxed font-medium" style={{
           animationDelay: '0.2s'
         }}>
             Track crypto, stocks, ETFs, real estate funds, and bank balances in one futuristic interface. 
