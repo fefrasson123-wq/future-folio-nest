@@ -29,7 +29,8 @@ const HeroSection = () => {
             <br />
             <span className="text-gradient text-5xl">Investimentos</span>
             <br />
-            <span className="text-foreground">Em um só App</span>
+            <span className="text-foreground">em um só </span>
+            <span className="text-gradient">Lugar</span>
           </h1>
 
           {/* Subheading */}
