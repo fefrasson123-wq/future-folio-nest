@@ -3,7 +3,7 @@ import { AlertCircle, Shuffle, HelpCircle } from "lucide-react";
 const problems = [
   {
     icon: Shuffle,
-    text: "Investe em mais de uma categoria de ativos",
+    text: "Investe em mais de uma corretora",
   },
   {
     icon: AlertCircle,
