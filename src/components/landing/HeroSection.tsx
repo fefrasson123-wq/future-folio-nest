@@ -38,20 +38,6 @@ const HeroSection = () => {
           animationDelay: '0.2s'
         }}>Acompanhe Ações, Criptomoedas, Fundo Imobiliários, Renda fixa, Bolsa Americana, imóveis e muito mais em uma interface futurista. Com preços atualizados em tempo real mantendo a Segurança total dos seus dados.</p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{
-          animationDelay: '0.4s'
-        }}>
-            <Button variant="hero" size="lg">
-              Start Tracking
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="hero-outline" size="lg">
-              <Zap className="w-5 h-5" />
-              Watch Demo
-            </Button>
-          </div>
-
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto animate-fade-in-up" style={{
           animationDelay: '0.6s'
@@ -86,6 +72,20 @@ const HeroSection = () => {
           </div>
           {/* Glow effect behind the image */}
           <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-3xl -z-10" />
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 animate-fade-in-up" style={{
+          animationDelay: '0.4s'
+        }}>
+          <Button variant="hero" size="lg">
+            Start Tracking
+            <ArrowRight className="w-5 h-5" />
+          </Button>
+          <Button variant="hero-outline" size="lg">
+            <Zap className="w-5 h-5" />
+            Watch Demo
+          </Button>
         </div>
       </div>
     </section>;
