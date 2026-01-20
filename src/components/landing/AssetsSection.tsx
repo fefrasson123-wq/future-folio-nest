@@ -65,24 +65,24 @@ const AssetsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
           {assets.map((asset, index) => (
             <div
               key={index}
               className="group relative overflow-hidden"
             >
-              <div className="glass-card p-10 rounded-2xl border border-border/50 hover:border-primary/50 transition-all duration-500">
+              <div className="glass-card p-4 rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-500">
                 {/* Gradient background on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${asset.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-2xl`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${asset.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-xl`} />
                 
-                <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${asset.color} flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300`}>
-                  <asset.icon className="w-10 h-10 text-white" />
+                <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${asset.color} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300 mx-auto`}>
+                  <asset.icon className="w-5 h-5 text-white" />
                 </div>
                 
-                <h3 className="font-display text-2xl font-bold mb-4 text-foreground">
+                <h3 className="font-display text-sm font-bold mb-1 text-foreground text-center">
                   {asset.title}
                 </h3>
-                <p className="text-muted-foreground text-lg">
+                <p className="text-muted-foreground text-xs text-center leading-tight">
                   {asset.description}
                 </p>
               </div>
