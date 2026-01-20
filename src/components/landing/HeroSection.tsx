@@ -56,7 +56,7 @@ const HeroSection = () => {
               label: "Categorias"
             }, {
               value: "100%",
-              label: "Private"
+              label: "Privado"
             }, {
               value: "+500",
               label: "Usuários Ativos"

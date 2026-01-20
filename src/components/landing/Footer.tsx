@@ -11,18 +11,18 @@ const Footer = () => {
 
           <div className="flex items-center gap-8">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-              Privacy Policy
+              Política de Privacidade
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-              Terms of Service
+              Termos de Uso
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-              Contact
+              Contato
             </a>
           </div>
 
           <p className="text-muted-foreground text-sm">
-            © 2024 My Invest. All rights reserved.
+            © 2024 My Invest. Todos os direitos reservados.
           </p>
         </div>
       </div>

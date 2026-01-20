@@ -4,20 +4,20 @@ const steps = [
   {
     icon: UserPlus,
     step: "01",
-    title: "Create Account",
-    description: "Sign up in seconds with just your email. No credit card or bank info needed.",
+    title: "Crie sua Conta",
+    description: "Cadastre-se em segundos apenas com seu email. Sem cartão de crédito ou dados bancários.",
   },
   {
     icon: PlusCircle,
     step: "02",
-    title: "Add Investments",
-    description: "Manually enter your assets: crypto, stocks, funds, ETFs, and bank balances.",
+    title: "Adicione Investimentos",
+    description: "Insira manualmente seus ativos: cripto, ações, fundos, ETFs e saldos bancários.",
   },
   {
     icon: Eye,
     step: "03",
-    title: "Track & Analyze",
-    description: "View your complete portfolio with beautiful charts and real-time analytics.",
+    title: "Acompanhe e Analise",
+    description: "Visualize seu portfólio completo com gráficos bonitos e análises em tempo real.",
   },
 ];
 
@@ -30,10 +30,10 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            How It <span className="text-gradient">Works</span>
+            Como <span className="text-gradient">Funciona</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Get started in three simple steps. Your complete portfolio view is just minutes away.
+            Comece em três passos simples. Sua visão completa do portfólio está a poucos minutos de distância.
           </p>
         </div>
 
