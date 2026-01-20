@@ -36,10 +36,7 @@ const HeroSection = () => {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-in-up leading-relaxed font-medium" style={{
           animationDelay: '0.2s'
-        }}>
-            Track crypto, stocks, ETFs, real estate funds, and bank balances in one futuristic interface. 
-            Add everything manually, keep full control of your data.
-          </p>
+        }}>Acompanhe Ações, Criptomoedas, Fundo Imobiliários, Renda fixa, Bolsa Americana, imóveis e muito mais em uma interface futurista. Com preços atualizados em tempo real mantendo a Segurança total dos seus dados.</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up" style={{
