@@ -13,7 +13,7 @@ const plans = {
   },
   pro: {
     name: "Pro",
-    price: "R$ 99,90",
+    price: "R$ 39,90",
     period: "/mês",
     description: "Para investidores sérios",
     features: ["Ativos ilimitados", "Categorias ilimitadas", "Relatórios avançados", "Histórico completo", "Exportações"],
@@ -22,7 +22,7 @@ const plans = {
   },
   premium: {
     name: "Premium",
-    price: "R$ 39,90",
+    price: "R$ 99,90",
     period: "/mês",
     description: "Controle total",
     features: ["Tudo do Pro", "Suporte prioritário", "Alertas personalizados", "API de integração", "Multi-usuários", "Relatórios personalizados"],
