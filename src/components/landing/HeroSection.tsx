@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8 animate-fade-in-up">
             <Shield className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">No passwords required • 100% manual control</span>
+            <span className="text-sm text-primary font-medium">Seguro. Sem conectar contas.</span>
           </div>
 
           {/* Main heading */}
