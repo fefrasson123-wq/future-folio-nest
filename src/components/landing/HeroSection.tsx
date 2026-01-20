@@ -61,8 +61,8 @@ const HeroSection = () => {
             sublabel: "Investimentos"
           }, {
             value: "+500",
-            label: "Usuários",
-            sublabel: "Ativos"
+            label: "Investidores organizando",
+            sublabel: "seu patrimônio"
           }].map((stat, index) => <div key={index} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-bold neon-text mb-2">
                   {stat.value}
