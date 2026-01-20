@@ -85,9 +85,7 @@ const HeroSection = () => {
         animationDelay: '0.4s'
       }}>
           <Button variant="hero" size="lg" asChild>
-            <a href="/signup">
-              Começar Agora
-              <ArrowRight className="w-5 h-5" />
+            <a href="/signup">CRIAR CONTA GRÁTIS<ArrowRight className="w-5 h-5" />
             </a>
           </Button>
           <Button variant="hero-outline" size="lg" onClick={scrollToFeatures}>
