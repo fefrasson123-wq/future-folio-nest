@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown, Shield } from "lucide-react";
+import { ArrowRight, ChevronDown, Shield } from "lucide-react";
 import dashboardPreview from "@/assets/dashboard-preview.png";
 
 const HeroSection = () => {
@@ -103,7 +103,7 @@ const HeroSection = () => {
           </Button>
           <Button variant="hero-outline" size="lg" onClick={scrollToFeatures}>
             O que oferecemos
-            <ArrowDown className="w-5 h-5" />
+            <ChevronDown className="w-5 h-5" />
           </Button>
         </div>
       </div>
