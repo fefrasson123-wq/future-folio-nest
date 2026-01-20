@@ -47,7 +47,7 @@ const HeroSection = () => {
           {/* Primary CTA Button */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <Button variant="hero" size="lg" asChild>
-              <a href="/signup">CRIAR CONTA GRÁTIS<ArrowRight className="w-5 h-5" /></a>
+              <a href="https://myinvestapp.lovable.app/auth?mode=signup">CRIAR CONTA GRÁTIS<ArrowRight className="w-5 h-5" /></a>
             </Button>
           </div>
 
