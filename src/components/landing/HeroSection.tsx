@@ -58,7 +58,7 @@ const HeroSection = () => {
               value: "100%",
               label: "Private"
             }, {
-              value: "+1000",
+              value: "+500",
               label: "Usuários Ativos"
             }].map((stat, index) => (
               <div key={index} className="text-center">
