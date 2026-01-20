@@ -17,7 +17,7 @@ const problems = [
 
 const ProblemSection = () => {
   return (
-    <section className="pt-12 pb-24 relative overflow-hidden bg-card/30">
+    <section className="pt-12 pb-8 relative overflow-hidden bg-card/30">
       <div className="absolute inset-0 grid-bg opacity-10" />
       
       <div className="container mx-auto px-6 relative z-10">

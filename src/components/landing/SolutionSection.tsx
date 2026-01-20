@@ -9,7 +9,7 @@ const solutions = [
 
 const SolutionSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="pt-8 pb-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="glow-orb w-[500px] h-[500px] bg-primary/30 top-1/2 -left-48 animate-pulse-slow" />
       
