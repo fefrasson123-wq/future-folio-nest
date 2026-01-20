@@ -53,7 +53,8 @@ const HeroSection = () => {
           }}>
           {[{
               value: "+10",
-              label: "Categorias"
+              label: "Categorias",
+              sublabel: "Investimentos"
             }, {
               value: "100%",
               label: "Privado"
@@ -67,6 +68,7 @@ const HeroSection = () => {
                 </div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider">
                   {stat.label}
+                  {stat.sublabel && <><br />{stat.sublabel}</>}
                 </div>
               </div>
             ))}
