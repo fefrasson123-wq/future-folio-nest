@@ -7,7 +7,7 @@ const problems = [
   },
   {
     icon: AlertCircle,
-    text: "Usa apps diferentes e se perde",
+    text: "Investe em mais de uma corretora",
   },
   {
     icon: HelpCircle,
