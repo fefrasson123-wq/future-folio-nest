@@ -5,7 +5,7 @@ const credentials = [{
   text: "Criado por investidores"
 }, {
   icon: Target,
-  text: "Feito para quem investe de verdade"
+  text: "Feito para Organização Financeira"
 }, {
   icon: Smartphone,
   text: "Pensado para quem já investe em mais de um lugar"
