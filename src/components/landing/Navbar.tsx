@@ -11,22 +11,22 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
-            Features
+            Recursos
           </a>
           <a href="#assets" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
-            Assets
+            Ativos
           </a>
           <a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
-            How It Works
+            Como Funciona
           </a>
         </div>
 
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-            Login
+            Entrar
           </Button>
           <Button variant="outline" size="sm">
-            Get Started
+            Começar
           </Button>
         </div>
       </div>

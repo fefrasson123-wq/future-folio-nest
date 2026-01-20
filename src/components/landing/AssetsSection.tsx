@@ -11,38 +11,38 @@ import newInvestmentPreview from "@/assets/new-investment-preview.png";
 const assets = [
   {
     icon: Bitcoin,
-    title: "Cryptocurrencies",
-    description: "Bitcoin, Ethereum, and all major cryptocurrencies",
+    title: "Criptomoedas",
+    description: "Bitcoin, Ethereum e todas as principais criptomoedas",
     color: "from-orange-500 to-yellow-500",
   },
   {
     icon: TrendingUp,
-    title: "Brazilian Stocks",
-    description: "B3 listed stocks - PETR4, VALE3, ITUB4, and more",
+    title: "Ações Brasileiras",
+    description: "Ações listadas na B3 - PETR4, VALE3, ITUB4 e mais",
     color: "from-primary to-accent",
   },
   {
     icon: Building2,
-    title: "Real Estate Funds",
-    description: "FIIs - Brazilian real estate investment trusts",
+    title: "Fundos Imobiliários",
+    description: "FIIs - Fundos de Investimento Imobiliário",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: DollarSign,
-    title: "US Stocks",
-    description: "NYSE and NASDAQ - AAPL, MSFT, GOOGL, AMZN",
+    title: "Ações Americanas",
+    description: "NYSE e NASDAQ - AAPL, MSFT, GOOGL, AMZN",
     color: "from-green-500 to-emerald-500",
   },
   {
     icon: PieChart,
     title: "ETFs",
-    description: "Exchange-traded funds from global markets",
+    description: "Fundos de índice de mercados globais",
     color: "from-purple-500 to-pink-500",
   },
   {
     icon: Landmark,
-    title: "Bank Balances",
-    description: "Savings, checking, and fixed-income accounts",
+    title: "Saldos Bancários",
+    description: "Poupança, conta corrente e renda fixa",
     color: "from-slate-400 to-slate-600",
   },
 ];
@@ -55,10 +55,10 @@ const AssetsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-            Track <span className="text-gradient">Every Asset</span>
+            Acompanhe <span className="text-gradient">Todos os Ativos</span>
           </h2>
           <p className="text-muted-foreground text-xl max-w-2xl mx-auto">
-            From cryptocurrencies to bank accounts, manage all your investments in one unified dashboard.
+            De criptomoedas a contas bancárias, gerencie todos os seus investimentos em um painel unificado.
           </p>
         </div>
 
@@ -90,10 +90,10 @@ const AssetsSection = () => {
         {/* App Preview Section */}
         <div className="mt-24 text-center">
           <h3 className="font-display text-3xl md:text-4xl font-bold mb-6">
-            Add <span className="text-gradient">New Investments</span> Easily
+            Adicione <span className="text-gradient">Novos Investimentos</span> Facilmente
           </h3>
           <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
-            Choose from multiple asset categories with our intuitive interface
+            Escolha entre múltiplas categorias de ativos com nossa interface intuitiva
           </p>
           
           <div className="relative max-w-2xl mx-auto">

@@ -10,33 +10,33 @@ import {
 const features = [
   {
     icon: Shield,
-    title: "100% Private",
-    description: "No API connections or bank passwords. You manually enter all your data with complete privacy.",
+    title: "100% Privado",
+    description: "Sem conexões de API ou senhas bancárias. Você insere todos os seus dados manualmente com total privacidade.",
   },
   {
     icon: BarChart3,
-    title: "Visual Analytics",
-    description: "Beautiful charts and graphs to visualize your portfolio distribution and performance over time.",
+    title: "Análises Visuais",
+    description: "Gráficos bonitos para visualizar a distribuição e o desempenho do seu portfólio ao longo do tempo.",
   },
   {
     icon: Wallet,
-    title: "Multi-Asset Support",
-    description: "Track crypto, Brazilian stocks, FIIs, US stocks, ETFs, and bank balances all in one place.",
+    title: "Multi-Ativos",
+    description: "Acompanhe cripto, ações brasileiras, FIIs, ações americanas, ETFs e saldos bancários em um só lugar.",
   },
   {
     icon: RefreshCw,
-    title: "Easy Updates",
-    description: "Quickly update your portfolio values anytime. Simple, fast, and intuitive interface.",
+    title: "Atualizações Fáceis",
+    description: "Atualize os valores do seu portfólio rapidamente. Interface simples, rápida e intuitiva.",
   },
   {
     icon: Lock,
-    title: "Secure Storage",
-    description: "Your investment data is encrypted and stored securely. Only you have access.",
+    title: "Armazenamento Seguro",
+    description: "Seus dados de investimento são criptografados e armazenados com segurança. Só você tem acesso.",
   },
   {
     icon: Smartphone,
-    title: "Mobile Ready",
-    description: "Access your portfolio from any device. Responsive design that works everywhere.",
+    title: "Responsivo",
+    description: "Acesse seu portfólio de qualquer dispositivo. Design responsivo que funciona em qualquer lugar.",
   },
 ];
 
@@ -50,10 +50,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Powerful</span> Features
+            <span className="text-gradient">Recursos</span> Poderosos
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Everything you need to track and manage your investment portfolio with complete privacy and control.
+            Tudo o que você precisa para acompanhar e gerenciar seu portfólio de investimentos com total privacidade e controle.
           </p>
         </div>
 
