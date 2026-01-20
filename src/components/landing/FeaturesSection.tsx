@@ -25,6 +25,6 @@ const features = [{
   description: "Acesse seu portfólio de qualquer dispositivo. Design responsivo que funciona em qualquer lugar."
 }];
 const FeaturesSection = () => {
-  return;
+  return null;
 };
 export default FeaturesSection;

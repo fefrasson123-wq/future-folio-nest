@@ -49,11 +49,14 @@ const assets = [
 
 const AssetsSection = () => {
   return (
-    <section id="assets" className="py-32 relative overflow-hidden bg-card/30">
+    <section id="assets" className="pt-16 pb-32 relative overflow-hidden">
+      {/* Gradient transition from previous section */}
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-background to-card/30" />
+      <div className="absolute inset-0 top-32 bg-card/30" />
       <div className="absolute inset-0 grid-bg opacity-10" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
             Acompanhe <span className="text-gradient">Todos os Ativos</span>
           </h2>
