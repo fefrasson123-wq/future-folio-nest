@@ -2,7 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const solutions = [
   "Centraliza todos os seus investimentos",
-  "Atualiza preços automaticamente",
+  "Atualiza preços em Tempo real",
   "Mostra sua rentabilidade real",
   "Funciona sem acessar sua conta na corretora",
 ];
