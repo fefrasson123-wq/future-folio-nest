@@ -40,12 +40,19 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-in-up leading-relaxed font-medium" style={{
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in-up leading-relaxed font-medium" style={{
           animationDelay: '0.2s'
         }}>Acompanhe Ações, Criptomoedas, Fundos Imobiliários, Renda fixa, Bolsa Americana, imóveis e muito mais, com preços atualizados em tempo real mantendo a Segurança total dos seus dados.</p>
 
+          {/* Primary CTA Button */}
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <Button variant="hero" size="lg" asChild>
+              <a href="/signup">CRIAR CONTA GRÁTIS<ArrowRight className="w-5 h-5" /></a>
+            </Button>
+          </div>
+
           {/* Stats */}
-          <div className="flex justify-between gap-8 mt-20 max-w-2xl mx-auto animate-fade-in-up" style={{
+          <div className="flex justify-between gap-8 mt-12 max-w-2xl mx-auto animate-fade-in-up" style={{
           animationDelay: '0.6s'
         }}>
           {[{
@@ -80,14 +87,8 @@ const HeroSection = () => {
           <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-3xl -z-10" />
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 animate-fade-in-up" style={{
-        animationDelay: '0.4s'
-      }}>
-          <Button variant="hero" size="lg" asChild>
-            <a href="/signup">CRIAR CONTA GRÁTIS<ArrowRight className="w-5 h-5" />
-            </a>
-          </Button>
+        {/* Secondary CTA Button */}
+        <div className="flex justify-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <Button variant="hero-outline" size="lg" onClick={scrollToFeatures}>
             O que oferecemos
             <ChevronDown className="w-5 h-5" />
