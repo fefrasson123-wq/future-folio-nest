@@ -1,7 +1,11 @@
 import { CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
 const solutions = ["Centralize todos os seus investimentos", "Preços atualizados automaticamente", "Veja sua rentabilidade real", "Use sem acessar sua Corretora"];
+
 const SolutionSection = () => {
-  return <section className="py-24 relative overflow-hidden">
+  return (
+    <section className="pt-8 pb-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="glow-orb w-[500px] h-[500px] bg-primary/30 top-1/2 -left-48 animate-pulse-slow" />
       
@@ -14,18 +18,32 @@ const SolutionSection = () => {
             Uma solução simples para centralizar e acompanhar todo o seu patrimônio.
           </p>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            {solutions.map((solution, index) => <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-xl neon-border hover:neon-border-intense transition-all duration-300">
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+            {solutions.map((solution, index) => (
+              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-xl neon-border hover:neon-border-intense transition-all duration-300">
                 <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                 </div>
                 <p className="text-lg text-foreground font-medium text-left">
                   {solution}
                 </p>
-              </div>)}
+              </div>
+            ))}
           </div>
+
+          <Button 
+            asChild 
+            size="lg" 
+            className="neon-border hover:neon-border-intense bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg font-semibold"
+          >
+            <a href="https://myinvestapp.lovable.app/auth?mode=signup">
+              Começar Agora
+            </a>
+          </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default SolutionSection;
