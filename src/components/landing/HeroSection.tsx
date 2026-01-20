@@ -51,15 +51,15 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto animate-fade-in-up" style={{
             animationDelay: '0.6s'
           }}>
-            {[{
-              value: "6+",
-              label: "Asset Types"
+          {[{
+              value: "+10",
+              label: "Categorias"
             }, {
               value: "100%",
               label: "Private"
             }, {
-              value: "0",
-              label: "Fees"
+              value: "+1000",
+              label: "Usuários Ativos"
             }].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-bold neon-text mb-2">
