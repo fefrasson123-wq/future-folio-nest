@@ -88,7 +88,7 @@ const HeroSection = () => {
         </div>
 
         {/* Secondary CTA Button */}
-        <div className="flex justify-center mt-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="flex justify-center mt-2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <Button variant="hero-outline" size="lg" onClick={scrollToFeatures}>
             O que oferecemos
             <ChevronDown className="w-5 h-5" />
