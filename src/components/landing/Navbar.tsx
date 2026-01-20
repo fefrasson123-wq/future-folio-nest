@@ -22,11 +22,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary">
-            Entrar
-          </Button>
-          <Button variant="outline" size="sm">
-            Começar
+          <Button variant="outline" size="sm" asChild>
+            <a href="/signup">Criar Conta Grátis</a>
           </Button>
         </div>
       </div>
