@@ -24,12 +24,12 @@ const HeroSection = () => {
           </div>
 
           {/* Main heading */}
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight animate-slide-up">
-            <span className="text-foreground text-left">Todos os seus</span>
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight animate-slide-up text-center">
+            <span className="text-foreground text-left text-4xl">Todos os seus</span>
             <br />
-            <span className="text-gradient">Investments</span>
+            <span className="text-gradient text-5xl">Investimentos</span>
             <br />
-            <span className="text-foreground">One Dashboard</span>
+            <span className="text-foreground">Em um só App</span>
           </h1>
 
           {/* Subheading */}
