@@ -13,7 +13,7 @@ const plans = {
   },
   pro: {
     name: "Pro",
-    price: "R$ 39,90",
+    price: "R$ 99,90",
     period: "/mês",
     description: "Para investidores sérios",
     features: ["Ativos ilimitados", "Categorias ilimitadas", "Relatórios avançados", "Histórico completo", "Exportações"],
