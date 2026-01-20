@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-const solutions = ["Centraliza todos os seus investimentos", "Atualiza preços em Tempo real", "Mostra sua rentabilidade real", "Funciona sem acessar sua conta na corretora"];
+const solutions = ["Centralize todos os seus investimentos", "Preços atualizados automaticamente", "Veja sua rentabilidade real", "Use sem acessar sua Corretora"];
 const SolutionSection = () => {
   return <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
