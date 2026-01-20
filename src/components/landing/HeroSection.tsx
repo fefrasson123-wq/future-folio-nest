@@ -68,7 +68,7 @@ const HeroSection = () => {
         </div>
 
         {/* Floating dashboard preview */}
-        <div className="mt-16 relative max-w-5xl mx-auto animate-float">
+        <div className="mt-16 relative max-w-7xl mx-auto animate-float">
           <div className="glass-card neon-border p-2 rounded-2xl overflow-hidden">
             <img 
               src={dashboardPreview} 
