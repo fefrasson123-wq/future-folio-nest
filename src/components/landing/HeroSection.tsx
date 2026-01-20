@@ -53,7 +53,7 @@ const HeroSection = () => {
           }}>
           {[{
               value: "+10",
-              label: "Categorias",
+              label: "Categorias de",
               sublabel: "Investimentos"
             }, {
               value: "100%",
