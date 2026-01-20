@@ -36,8 +36,8 @@ const SolutionSection = () => {
             size="lg" 
             className="neon-border hover:neon-border-intense bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg font-semibold"
           >
-            <a href="https://myinvestapp.lovable.app/auth?mode=signup">
-              Começar Agora
+          <a href="https://myinvestapp.lovable.app/auth?mode=signup">
+              👉 Começar Agora
             </a>
           </Button>
         </div>
