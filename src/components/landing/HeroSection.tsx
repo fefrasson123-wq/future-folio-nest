@@ -8,7 +8,7 @@ const HeroSection = () => {
       behavior: 'smooth'
     });
   };
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient pb-24">
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       
