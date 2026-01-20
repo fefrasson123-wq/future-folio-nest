@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Zap } from "lucide-react";
+import { ArrowRight, ArrowDown, Shield } from "lucide-react";
 import dashboardPreview from "@/assets/dashboard-preview.png";
 
 const HeroSection = () => {
@@ -102,8 +102,8 @@ const HeroSection = () => {
             </a>
           </Button>
           <Button variant="hero-outline" size="lg" onClick={scrollToFeatures}>
-            <Zap className="w-5 h-5" />
-            Ver Demonstração
+            O que oferecemos
+            <ArrowDown className="w-5 h-5" />
           </Button>
         </div>
       </div>
