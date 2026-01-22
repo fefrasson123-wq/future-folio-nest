@@ -24,7 +24,7 @@ const plans = {
     name: "Premium",
     price: "R$ 79,90",
     period: "/mês",
-    description: "Controle total",
+    description: "Sem Fronteiras",
     features: ["Tudo do Pro", "Suporte prioritário", "Alertas personalizados", "API de integração", "Multi-usuários", "Relatórios personalizados"],
     cta: "Começar Grátis",
     popular: false
