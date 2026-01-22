@@ -25,7 +25,7 @@ const plans = {
     price: "R$ 79,90",
     period: "/mês",
     description: "Sem Fronteiras",
-    features: ["Pro Completo", "Suporte prioritário", "Alertas personalizados", "API de integração", "Multi-usuários", "Relatórios personalizados"],
+    features: ["Pro Completo", "Suporte prioritário", "Alertas personalizados", "Multi-usuários", "Relatórios personalizados"],
     cta: "Começar Grátis",
     popular: false
   }
