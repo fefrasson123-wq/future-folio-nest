@@ -1,96 +1,183 @@
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Check, ArrowRight } from "lucide-react";
-const plans = {
-  free: {
+import { Check, ArrowRight, Sparkles } from "lucide-react";
+
+const plans = [
+  {
     name: "Free",
     price: "R$ 0",
     period: "/mês",
-    description: "Perfeito para começar",
-    features: ["Organize seus investimentos", "Gráfico de evolução de patrimônio", "Até 10 ativos", "Até 2 categorias", "Preços em tempo real"],
+    description: "Perfeito para começar a organizar seus investimentos",
+    features: [
+      "Organize seus investimentos",
+      "Gráfico de evolução de patrimônio",
+      "Até 10 ativos",
+      "Até 2 categorias",
+      "Preços em tempo real",
+    ],
     cta: "Começar Grátis",
-    popular: false
+    popular: false,
   },
-  pro: {
+  {
     name: "Pro",
     price: "R$ 39,90",
     period: "/mês",
-    description: "Para investidores sérios",
-    features: ["Ativos ilimitados", "Categorias ilimitadas", "Relatórios avançados", "Histórico completo", "Exportações"],
-    cta: "Começar Grátis",
-    popular: true
+    description: "Para investidores que levam a sério seu patrimônio",
+    features: [
+      "Ativos ilimitados",
+      "Categorias ilimitadas",
+      "Relatórios avançados",
+      "Histórico completo",
+      "Exportações em PDF/Excel",
+    ],
+    cta: "Começar Agora",
+    popular: true,
   },
-  premium: {
+  {
     name: "Premium",
     price: "R$ 79,90",
     period: "/mês",
-    description: "Sem Fronteiras",
-    features: ["Pro Completo", "Suporte prioritário", "Alertas personalizados", "Multi-usuários", "Relatórios personalizados"],
-    cta: "Começar Grátis",
-    popular: false
-  }
-};
+    description: "Controle total sem fronteiras",
+    features: [
+      "Tudo do Pro",
+      "Suporte prioritário 24/7",
+      "Alertas personalizados",
+      "Multi-usuários (até 5)",
+      "Relatórios personalizados",
+    ],
+    cta: "Ser Premium",
+    popular: false,
+  },
+];
+
 const PricingSection = () => {
-  return <section id="pricing" className="py-24 relative overflow-hidden bg-card/30">
-      <div className="absolute inset-0 grid-bg opacity-10" />
-      <div className="glow-orb w-[600px] h-[600px] bg-primary/20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow" />
-      
+  return (
+    <section id="pricing" className="py-24 relative overflow-hidden bg-background">
+      <div className="absolute inset-0 grid-bg opacity-5" />
+      <div className="glow-orb w-[800px] h-[800px] bg-primary/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Planos 
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+            <Sparkles className="w-4 h-4" />
+            Preços Transparentes
+          </span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
+            Escolha seu <span className="neon-text">Plano</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Sem confusão. Escolha o que faz sentido para você.
+            Sem surpresas. Sem taxas escondidas. Escolha o que faz sentido para você.
           </p>
         </div>
-        
-        <Tabs defaultValue="pro" className="max-w-5xl mx-auto">
-          <TabsList className="grid grid-cols-3 w-full max-w-md mx-auto mb-12 bg-card/50 p-1">
-            <TabsTrigger value="free" className="font-display">Free</TabsTrigger>
-            <TabsTrigger value="pro" className="font-display">Pro</TabsTrigger>
-            <TabsTrigger value="premium" className="font-display">Premium</TabsTrigger>
-          </TabsList>
-          
-          {Object.entries(plans).map(([key, plan]) => <TabsContent key={key} value={key} className="mt-0">
-              <div className={`glass-card p-8 md:p-12 rounded-2xl max-w-2xl mx-auto ${plan.popular ? 'neon-border-intense' : 'border border-border/50'}`}>
-                {plan.popular && <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/60 shadow-[0_0_12px_rgba(0,255,136,0.15)] mb-6">
-                    <span className="w-2 h-2 rounded-full bg-primary/80" />
-                    <span className="text-sm text-primary font-semibold uppercase tracking-wider">Mais Popular</span>
-                  </div>}
-                
-                <div className="text-center mb-8">
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-                    {plan.name}
-                  </h3>
-                  <p className="text-muted-foreground mb-4">{plan.description}</p>
-                  <div className="flex items-baseline justify-center gap-1">
-                    <span className="font-display text-5xl font-bold neon-text">{plan.price}</span>
-                    <span className="text-muted-foreground">{plan.period}</span>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          {plans.map((plan, index) => (
+            <div
+              key={plan.name}
+              className={`relative group rounded-2xl transition-all duration-500 ${
+                plan.popular
+                  ? "md:-translate-y-4 md:scale-105"
+                  : "hover:-translate-y-2"
+              }`}
+            >
+              {/* Popular badge */}
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                  <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-primary to-emerald-400 text-background text-sm font-bold uppercase tracking-wider shadow-lg shadow-primary/30">
+                    Mais Popular
                   </div>
                 </div>
-                
-                <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature, index) => <li key={index} className="flex items-center gap-3">
-                      <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                        <Check className="w-4 h-4 text-primary" />
-                      </div>
-                      <span className="text-foreground">{feature}</span>
-                    </li>)}
-                </ul>
-                
-                <Button variant="hero" size="lg" className="w-full" asChild>
-                  <a href="/signup">
-                    {plan.cta}
-                    <ArrowRight className="w-5 h-5" />
-                  </a>
-                </Button>
+              )}
+
+              {/* Card */}
+              <div
+                className={`relative h-full p-8 rounded-2xl backdrop-blur-sm transition-all duration-300 ${
+                  plan.popular
+                    ? "bg-gradient-to-b from-primary/15 to-primary/5 border-2 border-primary/50 shadow-2xl shadow-primary/20"
+                    : "bg-card/50 border border-border/50 hover:border-primary/30 hover:bg-card/80"
+                }`}
+              >
+                {/* Glow effect for popular */}
+                {plan.popular && (
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/10 to-transparent opacity-50" />
+                )}
+
+                <div className="relative z-10">
+                  {/* Header */}
+                  <div className="text-center mb-8">
+                    <h3 className="font-display text-xl font-bold text-foreground mb-2">
+                      {plan.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm mb-6 min-h-[40px]">
+                      {plan.description}
+                    </p>
+                    <div className="flex items-baseline justify-center gap-1">
+                      <span
+                        className={`font-display text-4xl lg:text-5xl font-bold ${
+                          plan.popular ? "neon-text" : "text-foreground"
+                        }`}
+                      >
+                        {plan.price}
+                      </span>
+                      <span className="text-muted-foreground text-sm">
+                        {plan.period}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-8" />
+
+                  {/* Features */}
+                  <ul className="space-y-4 mb-8">
+                    {plan.features.map((feature, featureIndex) => (
+                      <li
+                        key={featureIndex}
+                        className="flex items-start gap-3 group/item"
+                      >
+                        <div
+                          className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
+                            plan.popular
+                              ? "bg-primary/30 text-primary"
+                              : "bg-primary/15 text-primary/80"
+                          }`}
+                        >
+                          <Check className="w-3 h-3" />
+                        </div>
+                        <span className="text-foreground/90 text-sm leading-relaxed">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* CTA Button */}
+                  <Button
+                    variant={plan.popular ? "hero" : "outline"}
+                    size="lg"
+                    className={`w-full group/btn ${
+                      !plan.popular &&
+                      "hover:bg-primary/10 hover:border-primary/50 hover:text-primary"
+                    }`}
+                    asChild
+                  >
+                    <a href="/signup">
+                      {plan.cta}
+                      <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
+                    </a>
+                  </Button>
+                </div>
               </div>
-            </TabsContent>)}
-        </Tabs>
-        
-        
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom note */}
+        <p className="text-center text-muted-foreground/60 text-sm mt-12">
+          Todos os planos incluem 7 dias de teste grátis. Cancele quando quiser.
+        </p>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default PricingSection;
