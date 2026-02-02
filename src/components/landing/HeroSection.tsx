@@ -30,10 +30,10 @@ const HeroSection = () => {
           </div>
 
           {/* Main heading */}
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight animate-slide-up text-center">
-            <span className="text-foreground text-left text-4xl">Todos os seus</span>
-            <br />
-            <span className="text-gradient text-5xl">Investimentos</span>
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up text-center">
+            <span className="text-foreground">Todos os seus </span>
+            <span className="text-gradient md:inline">Investimentos</span>
+            <br className="md:hidden" />
             <br />
             <span className="text-foreground">em um só </span>
             <span className="text-gradient">Lugar</span>
