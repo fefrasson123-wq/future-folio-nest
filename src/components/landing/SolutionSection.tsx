@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const solutions = ["Centralize todos os seus investimentos", "Preços atualizados automaticamente", "Veja sua rentabilidade real", "Use sem acessar sua Corretora"];
+const solutions = ["Centralize todos os seus investimentos", "Preços atualizados automaticamente", "Veja sua rentabilidade real", "Use sem acessar sua Corretora", "Cálculo automático de ganhos e perdas"];
 
 const SolutionSection = () => {
   return (
