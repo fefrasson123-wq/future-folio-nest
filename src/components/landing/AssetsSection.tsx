@@ -12,7 +12,7 @@ const assets = [
   {
     icon: Bitcoin,
     title: "Criptomoedas",
-    description: "Bitcoin, Ethereum e todas as principais criptomoedas",
+    description: "Bitcoin, Ethereum e +250 Criptos",
     color: "from-orange-500 to-yellow-500",
   },
   {
