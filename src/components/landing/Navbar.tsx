@@ -10,8 +10,8 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
-            Recursos
+          <a href="#solution" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
+            O que oferecemos
           </a>
           <a href="#assets" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
             Ativos
