@@ -1,4 +1,4 @@
-import { Lock, Key, Globe, PieChart } from "lucide-react";
+import { Lock, FileText, Globe, PieChart } from "lucide-react";
 
 const differentials = [
   {
@@ -7,9 +7,9 @@ const differentials = [
     description: "Seus dados bancários ficam seguros com você",
   },
   {
-    icon: Key,
-    title: "Nenhuma senha armazenada",
-    description: "Zero risco de vazamento de credenciais",
+    icon: FileText,
+    title: "Relatórios claros e detalhados",
+    description: "Acompanhe sua evolução com gráficos e análises",
   },
   {
     icon: Globe,
