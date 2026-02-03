@@ -23,7 +23,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="py-32 relative overflow-hidden">
+    <section id="how-it-works" className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="glow-orb w-[600px] h-[600px] bg-accent/20 bottom-0 left-1/2 -translate-x-1/2 animate-pulse-slow" />
 
