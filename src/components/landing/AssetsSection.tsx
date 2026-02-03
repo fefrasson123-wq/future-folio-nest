@@ -24,7 +24,7 @@ const assets = [
   {
     icon: Building2,
     title: "Fundos Imobiliários",
-    description: "FIIs - Fundos de Investimento Imobiliário",
+    description: "FIIs: MXRF11, HGLG11, XPLG11 e mais",
     color: "from-blue-500 to-cyan-500",
   },
   {
