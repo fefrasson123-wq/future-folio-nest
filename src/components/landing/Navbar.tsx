@@ -5,7 +5,19 @@ const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
     element.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
   }
+
+  // Fallback: guarantees navigation even if the section isn't mounted yet.
+  // This also makes the behavior consistent with hash-based deep links.
+  if (window.location.hash !== `#${id}`) {
+    window.location.hash = id;
+  }
+
+  window.setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, 0);
 };
 
 const Navbar = () => {
