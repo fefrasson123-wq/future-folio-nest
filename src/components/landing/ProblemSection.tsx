@@ -11,7 +11,7 @@ const problems = [
   },
   {
     icon: HelpCircle,
-    text: "Nunca sabe exatamente quanto tem investido",
+    text: "Nunca sabe exatamente quanto tem de Patrimônio total",
   },
 ];
 
