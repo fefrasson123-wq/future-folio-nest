@@ -5,7 +5,7 @@ const solutions = ["Centralize todos os seus investimentos", "Preços atualizado
 
 const SolutionSection = () => {
   return (
-    <section id="solution" className="pt-8 pb-24 relative overflow-hidden">
+    <section id="solution" className="pt-8 pb-24 relative overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="glow-orb w-[500px] h-[500px] bg-primary/30 top-1/2 -left-48 animate-pulse-slow" />
       
