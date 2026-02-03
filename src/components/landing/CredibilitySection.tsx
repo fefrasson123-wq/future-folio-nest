@@ -11,7 +11,7 @@ const credentials = [{
   text: "Pensado para quem já investe em mais de um lugar"
 }];
 const CredibilitySection = () => {
-  return <section className="pt-24 pb-12 relative overflow-hidden">
+  return <section className="pt-24 pb-4 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-20" />
       
       <div className="container mx-auto px-6 relative z-10">
