@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
 const Navbar = () => {
   return (
@@ -11,15 +17,24 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/#solution" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
+          <button 
+            onClick={() => scrollToSection("solution")} 
+            className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+          >
             O que oferecemos
-          </Link>
-          <Link to="/#assets" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
+          </button>
+          <button 
+            onClick={() => scrollToSection("assets")} 
+            className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+          >
             Ativos
-          </Link>
-          <Link to="/#how-it-works" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
+          </button>
+          <button 
+            onClick={() => scrollToSection("how-it-works")} 
+            className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium"
+          >
             Como Funciona
-          </Link>
+          </button>
         </div>
 
         <div className="flex items-center gap-4">
