@@ -1,4 +1,4 @@
-import { Lock, FileText, Globe, PieChart } from "lucide-react";
+import { Lock, FileText, LayoutGrid, PieChart } from "lucide-react";
 
 const differentials = [
   {
@@ -12,9 +12,9 @@ const differentials = [
     description: "Acompanhe sua evolução com gráficos e análises",
   },
   {
-    icon: Globe,
-    title: "Funciona com qualquer corretora",
-    description: "XP, Clear, Rico, Binance, e muitas outras",
+    icon: LayoutGrid,
+    title: "Todos os tipos de investimento",
+    description: "Em um único painel consolidado",
   },
   {
     icon: PieChart,
