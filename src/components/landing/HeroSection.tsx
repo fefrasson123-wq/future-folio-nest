@@ -33,7 +33,6 @@ const HeroSection = () => {
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up text-center">
             <span className="text-foreground">Todos os seus </span>
             <span className="text-gradient md:inline">Investimentos</span>
-            <br className="md:hidden" />
             <br />
             <span className="text-foreground">em um só </span>
             <span className="text-gradient">Lugar</span>
