@@ -18,7 +18,7 @@ const assets = [
   {
     icon: TrendingUp,
     title: "Ações Brasileiras",
-    description: "Ações listadas na B3 - PETR4, VALE3, ITUB4 e mais",
+    description: "Ações listadas na B3: PETR4, VALE3, ITUB4 e mais",
     color: "from-primary to-accent",
   },
   {
