@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-
 const CTASection = () => {
-  return (
-    <section id="cta-section" className="py-32 relative overflow-hidden">
+  return <section id="cta-section" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30" />
       
       {/* Multiple glow orbs for dramatic effect */}
       <div className="glow-orb w-[800px] h-[800px] bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow" />
-      <div className="glow-orb w-[400px] h-[400px] bg-accent top-1/4 left-1/4 animate-pulse-slow" style={{ animationDelay: '1s' }} />
-      <div className="glow-orb w-[300px] h-[300px] bg-neon-cyan bottom-1/4 right-1/4 animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="glow-orb w-[400px] h-[400px] bg-accent top-1/4 left-1/4 animate-pulse-slow" style={{
+      animationDelay: '1s'
+    }} />
+      <div className="glow-orb w-[300px] h-[300px] bg-neon-cyan bottom-1/4 right-1/4 animate-pulse-slow" style={{
+      animationDelay: '2s'
+    }} />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -37,13 +39,9 @@ const CTASection = () => {
             </Button>
           </div>
 
-          <p className="text-muted-foreground text-sm mt-8">
-            Sem cartão de crédito • Grátis para sempre no plano básico
-          </p>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
