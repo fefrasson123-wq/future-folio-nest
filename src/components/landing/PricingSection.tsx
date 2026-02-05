@@ -1,57 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Sparkles } from "lucide-react";
-
-const plans = [
-  {
-    name: "Free",
-    price: "R$ 0",
-    period: "/mês",
-    description: "Perfeito para começar a organizar seus investimentos",
-    features: [
-      "Organize seus investimentos",
-      "Gráfico de evolução de patrimônio",
-      "Até 10 ativos",
-      "Até 2 categorias",
-      "Preços em tempo real",
-    ],
-    cta: "Começar Grátis",
-    popular: false,
-  },
-  {
-    name: "Pro",
-    price: "R$ 39,90",
-    period: "/mês",
-    description: "Para investidores que levam a sério seu patrimônio",
-    features: [
-      "Ativos ilimitados",
-      "Categorias ilimitadas",
-      "Relatórios avançados",
-      "Histórico completo",
-      "Exportações em PDF/Excel",
-    ],
-    cta: "Começar Agora",
-    popular: true,
-  },
-  {
-    name: "Premium",
-    price: "R$ 79,90",
-    period: "/mês",
-    description: "Controle total sem fronteiras",
-    features: [
-      "Tudo do Pro",
-      "Suporte prioritário 24/7",
-      "Alertas personalizados",
-      "Multi-usuários (até 5)",
-      "Relatórios personalizados",
-    ],
-    cta: "Ser Premium",
-    popular: false,
-  },
-];
-
+const plans = [{
+  name: "Free",
+  price: "R$ 0",
+  period: "/mês",
+  description: "Perfeito para começar a organizar seus investimentos",
+  features: ["Organize seus investimentos", "Gráfico de evolução de patrimônio", "Até 10 ativos", "Até 2 categorias", "Preços em tempo real"],
+  cta: "Começar Grátis",
+  popular: false
+}, {
+  name: "Pro",
+  price: "R$ 39,90",
+  period: "/mês",
+  description: "Para investidores que levam a sério seu patrimônio",
+  features: ["Ativos ilimitados", "Categorias ilimitadas", "Relatórios avançados", "Histórico completo", "Exportações em PDF/Excel"],
+  cta: "Começar Agora",
+  popular: true
+}, {
+  name: "Premium",
+  price: "R$ 79,90",
+  period: "/mês",
+  description: "Controle total sem fronteiras",
+  features: ["Tudo do Pro", "Suporte prioritário 24/7", "Alertas personalizados", "Multi-usuários (até 5)", "Relatórios personalizados"],
+  cta: "Ser Premium",
+  popular: false
+}];
 const PricingSection = () => {
-  return (
-    <section id="pricing" className="py-24 relative overflow-hidden bg-background">
+  return <section id="pricing" className="py-24 relative overflow-hidden bg-background">
       <div className="absolute inset-0 grid-bg opacity-5" />
       <div className="glow-orb w-[800px] h-[800px] bg-primary/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
@@ -70,36 +45,18 @@ const PricingSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {plans.map((plan, index) => (
-            <div
-              key={plan.name}
-              className={`relative group rounded-2xl transition-all duration-500 ${
-                plan.popular
-                  ? "md:-translate-y-4 md:scale-105"
-                  : "hover:-translate-y-2"
-              }`}
-            >
+          {plans.map((plan, index) => <div key={plan.name} className={`relative group rounded-2xl transition-all duration-500 ${plan.popular ? "md:-translate-y-4 md:scale-105" : "hover:-translate-y-2"}`}>
               {/* Popular badge */}
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+              {plan.popular && <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
                   <div className="px-4 py-1.5 rounded-full bg-gradient-to-r from-primary to-emerald-400 text-background text-sm font-bold uppercase tracking-wider shadow-lg shadow-primary/30">
                     Mais Popular
                   </div>
-                </div>
-              )}
+                </div>}
 
               {/* Card */}
-              <div
-                className={`relative h-full p-8 rounded-2xl backdrop-blur-sm transition-all duration-300 ${
-                  plan.popular
-                    ? "bg-gradient-to-b from-primary/15 to-primary/5 border-2 border-primary/50 shadow-2xl shadow-primary/20"
-                    : "bg-card/50 border border-border/50 hover:border-primary/30 hover:bg-card/80"
-                }`}
-              >
+              <div className={`relative h-full p-8 rounded-2xl backdrop-blur-sm transition-all duration-300 ${plan.popular ? "bg-gradient-to-b from-primary/15 to-primary/5 border-2 border-primary/50 shadow-2xl shadow-primary/20" : "bg-card/50 border border-border/50 hover:border-primary/30 hover:bg-card/80"}`}>
                 {/* Glow effect for popular */}
-                {plan.popular && (
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/10 to-transparent opacity-50" />
-                )}
+                {plan.popular && <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/10 to-transparent opacity-50" />}
 
                 <div className="relative z-10">
                   {/* Header */}
@@ -111,11 +68,7 @@ const PricingSection = () => {
                       {plan.description}
                     </p>
                     <div className="flex items-baseline justify-center gap-1">
-                      <span
-                        className={`font-display text-4xl lg:text-5xl font-bold ${
-                          plan.popular ? "neon-text" : "text-foreground"
-                        }`}
-                      >
+                      <span className={`font-display text-4xl lg:text-5xl font-bold ${plan.popular ? "neon-text" : "text-foreground"}`}>
                         {plan.price}
                       </span>
                       <span className="text-muted-foreground text-sm">
@@ -129,37 +82,18 @@ const PricingSection = () => {
 
                   {/* Features */}
                   <ul className="space-y-4 mb-8">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-start gap-3 group/item"
-                      >
-                        <div
-                          className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                            plan.popular
-                              ? "bg-primary/30 text-primary"
-                              : "bg-primary/15 text-primary/80"
-                          }`}
-                        >
+                    {plan.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-start gap-3 group/item">
+                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${plan.popular ? "bg-primary/30 text-primary" : "bg-primary/15 text-primary/80"}`}>
                           <Check className="w-3 h-3" />
                         </div>
                         <span className="text-foreground/90 text-sm leading-relaxed">
                           {feature}
                         </span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
 
                   {/* CTA Button */}
-                  <Button
-                    variant={plan.popular ? "hero" : "outline"}
-                    size="lg"
-                    className={`w-full group/btn ${
-                      !plan.popular &&
-                      "hover:bg-primary/10 hover:border-primary/50 hover:text-primary"
-                    }`}
-                    asChild
-                  >
+                  <Button variant={plan.popular ? "hero" : "outline"} size="lg" className={`w-full group/btn ${!plan.popular && "hover:bg-primary/10 hover:border-primary/50 hover:text-primary"}`} asChild>
                     <a href="/signup">
                       {plan.cta}
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
@@ -167,17 +101,12 @@ const PricingSection = () => {
                   </Button>
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Bottom note */}
-        <p className="text-center text-muted-foreground/60 text-sm mt-12">
-          Todos os planos incluem 7 dias de teste grátis. Cancele quando quiser.
-        </p>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingSection;
