@@ -39,7 +39,9 @@ const CTASection = () => {
             </Button>
           </div>
 
-          
+          <p className="text-muted-foreground text-sm mt-16">
+            © 2024 My Invest. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </section>;
