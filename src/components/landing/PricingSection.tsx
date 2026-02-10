@@ -21,7 +21,7 @@ const plans = [{
   price: "R$ 79,90",
   period: "/mês",
   description: "Controle total sem fronteiras",
-  features: ["Tudo do Pro", "Suporte prioritário 24/7", "Alertas personalizados", "Multi-usuários (até 5)", "Relatórios personalizados"],
+  features: ["Tudo do plano Pro", "Cadastro dos ativos por nossa equipe (opcional)", "Download em PDF do Patrimônio", "Recompensas físicas com desconto"],
   cta: "Ser Premium",
   popular: false
 }];
