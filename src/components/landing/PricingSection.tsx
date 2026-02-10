@@ -25,7 +25,7 @@ const plans = [{
   price: "R$ 79,90",
   period: "/mês",
   description: "Controle total sem fronteiras",
-  features: ["Tudo do plano Pro", "Suporte prioritário", "Cadastro dos ativos por nossa equipe (opcional)", "Download em PDF do Patrimônio", "Recompensas físicas com desconto"],
+  features: ["Tudo do plano Pro", "Suporte prioritário", "Cadastro dos ativos por nossa equipe (opcional)", "Download em PDF dos investimentos", "Recompensas físicas com desconto"],
   cta: "Ser Premium",
   popular: false
 }];
