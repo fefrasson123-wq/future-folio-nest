@@ -17,7 +17,7 @@ const plans = [{
   price: "R$ 39,90",
   period: "/mês",
   description: "Para investidores que levam a sério seu patrimônio",
-  features: ["Tudo do Free", "Ativos ilimitados", "Categorias ilimitadas", "Relatório mensal da carteira", "Acesso a todas as áreas do App", "Patrimônio em Reais ou Dólares", "Definir metas no App", "Gráfico de projeção de crescimento", "Comparação com outros ativos do mercado", "Gráficos de evolução e rentabilidade", "Observações em cada investimento", "Tags: Curto, Médio e Longo Prazo", "Rendimentos mensais recebidos", "Alocação % e rebalanceamento", "Relatórios por classe de ativo"],
+  features: ["Tudo do Free", "Ativos ilimitados", "Categorias ilimitadas", "Relatório mensal da carteira", "Acesso a todas as áreas do App", "Patrimônio em Reais ou Dólares", "Definir metas no App", "Gráfico de projeção de crescimento", "Comparação com outros ativos do mercado", "Gráficos de evolução e rentabilidade", "Observações em cada investimento", "Tags: Curto, Médio e Longo Prazo", "Rendimentos mensais recebidos", "Alocação em % e rebalanceamento", "Relatórios por classe de ativo"],
   cta: "Começar Agora",
   popular: true
 }, {
