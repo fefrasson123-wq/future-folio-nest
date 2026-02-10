@@ -5,7 +5,7 @@ const plans = [{
   price: "R$ 0",
   period: "/mês",
   description: "Perfeito para começar a organizar seus investimentos",
-  features: ["Organize seus investimentos", "Gráfico de evolução de patrimônio", "Até 10 ativos", "Até 2 categorias", "Preços em tempo real"],
+  features: ["Até 5 ativos", "Até 2 categorias diferentes", "Gráfico de Evolução de Patrimônio", "Gráfico de Alocação (%) em Cada Ativo", "Visão geral do patrimônio total consolidado", "Histórico de aportes e retiradas", "Preços em tempo real"],
   cta: "Começar Grátis",
   popular: false
 }, {
