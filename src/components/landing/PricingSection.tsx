@@ -34,6 +34,8 @@ const PricingSection = () => {
   const [proExpanded, setProExpanded] = useState(false);
 
   return <section id="pricing" className="py-24 relative overflow-hidden bg-background">
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-background z-20 pointer-events-none" />
       <div className="absolute inset-0 grid-bg opacity-5" />
       <div className="glow-orb w-[800px] h-[800px] bg-primary/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
