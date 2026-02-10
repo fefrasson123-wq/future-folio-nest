@@ -9,7 +9,7 @@ import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import CredibilitySection from "@/components/landing/CredibilitySection";
 import PricingSection from "@/components/landing/PricingSection";
 import CTASection from "@/components/landing/CTASection";
-import Footer from "@/components/landing/Footer";
+
 
 const Index = () => {
   return (
@@ -25,7 +25,7 @@ const Index = () => {
       <CredibilitySection />
       <PricingSection />
       <CTASection />
-      <Footer />
+      
     </div>
   );
 };
