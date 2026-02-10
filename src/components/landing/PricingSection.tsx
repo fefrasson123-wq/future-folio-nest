@@ -51,7 +51,7 @@ const PricingSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto items-end">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto items-start">
           {plans.map((plan) => {
             const isPro = plan.name === "Pro";
             const visibleFeatures = isPro && !proExpanded
