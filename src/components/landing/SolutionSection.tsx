@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-const solutions = ["Centralize todos os seus investimentos", "Preços atualizados automaticamente", "Veja sua rentabilidade real", "Use sem acessar sua Corretora", "Cálculo automático de ganhos e perdas"];
+const solutions = ["Centralize todos os seus investimentos", "Preços atualizados em tempo real", "Veja sua rentabilidade real", "Use sem acessar sua Corretora", "Cálculo automático de ganhos e perdas"];
 const SolutionSection = () => {
   return <section id="solution" className="pt-8 pb-24 relative overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 grid-bg opacity-20" />
