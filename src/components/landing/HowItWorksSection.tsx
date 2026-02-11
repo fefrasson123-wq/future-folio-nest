@@ -17,7 +17,7 @@ const steps = [
     icon: Eye,
     step: "03",
     title: "Acompanhe e Analise",
-    description: "Visualize seu portfólio completo com gráficos bonitos e análises em tempo real.",
+    description: "Visualize seu patrimônio completo com gráficos reais e em tempo real.",
   },
 ];
 
