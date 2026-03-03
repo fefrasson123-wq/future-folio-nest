@@ -49,7 +49,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <Button variant="outline" size="sm" asChild>
-            <a href="/signup">Criar Conta Grátis</a>
+            <a href="https://myinvestapp.com.br" target="_blank" rel="noopener noreferrer">Criar Conta Grátis</a>
           </Button>
         </div>
       </div>
