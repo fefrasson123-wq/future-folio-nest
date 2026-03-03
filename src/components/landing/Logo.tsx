@@ -1,4 +1,4 @@
-import logoIcon from "@/assets/logo-icon.jpg";
+import logoIcon from "@/assets/logo-icon.png";
 
 interface LogoProps {
   className?: string;
