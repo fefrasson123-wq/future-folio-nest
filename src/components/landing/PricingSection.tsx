@@ -124,7 +124,7 @@ const PricingSection = () => {
 
                   {/* CTA Button */}
                   <Button variant={plan.popular ? "hero" : "outline"} size="lg" className={`w-full group/btn mt-auto ${!plan.popular && "hover:bg-primary/10 hover:border-primary/50 hover:text-primary"}`} asChild>
-                    <a href="/signup">
+                    <a href="https://myinvestapp.com.br" target="_blank" rel="noopener noreferrer">
                       {plan.cta}
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
                     </a>

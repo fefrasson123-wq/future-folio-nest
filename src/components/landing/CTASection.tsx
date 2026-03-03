@@ -32,7 +32,7 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
-              <a href="/signup">
+              <a href="https://myinvestapp.com.br" target="_blank" rel="noopener noreferrer">
                 Comece agora
                 <ArrowRight className="w-5 h-5" />
               </a>
