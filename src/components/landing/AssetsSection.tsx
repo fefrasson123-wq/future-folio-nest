@@ -106,7 +106,7 @@ const AssetsSection = () => {
               alt="New Investment Modal Preview" 
               className="relative rounded-2xl border border-primary/30 shadow-2xl shadow-primary/20 w-full"
               style={{ imageRendering: 'auto', WebkitBackfaceVisibility: 'hidden' }}
-              loading="eager"
+              loading="lazy"
             />
           </div>
         </div>
