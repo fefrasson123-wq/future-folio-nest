@@ -52,7 +52,7 @@ const HowItWorksSection = () => {
                 </div>
                 
                 {/* Icon */}
-                <div className="w-20 h-20 rounded-2xl bg-primary/20 neon-border flex items-center justify-center mx-auto mb-6 animate-glow">
+                <div className="w-20 h-20 rounded-2xl bg-primary/20 neon-border flex items-center justify-center mx-auto mb-6">
                   <step.icon className="w-10 h-10 text-primary" />
                 </div>
                 

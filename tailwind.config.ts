@@ -76,8 +76,8 @@ export default {
           "50%": { transform: "translateY(-20px)" },
         },
         "pulse-slow": {
-          "0%, 100%": { opacity: "0.4", transform: "scale(1)" },
-          "50%": { opacity: "0.6", transform: "scale(1.05)" },
+          "0%, 100%": { opacity: "0.2" },
+          "50%": { opacity: "0.4" },
         },
         "glow": {
           from: { boxShadow: "0 0 20px hsl(150 100% 50% / 0.3)" },

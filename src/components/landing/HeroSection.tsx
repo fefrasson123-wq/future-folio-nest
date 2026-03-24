@@ -74,8 +74,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Floating dashboard preview */}
-        <div className="mt-16 relative max-w-7xl mx-auto animate-float">
+        {/* Dashboard preview */}
+        <div className="mt-16 relative max-w-7xl mx-auto">
           <div className="glass-card neon-border p-2 rounded-2xl overflow-hidden">
             <img src={dashboardPreview} alt="My Invest Dashboard - Visualização do patrimônio, investimentos e lucros" className="w-full h-auto rounded-xl" style={{
             imageRendering: 'auto',
