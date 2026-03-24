@@ -106,9 +106,11 @@
   .glow-orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.4;
+    filter: blur(60px);
+    opacity: 0.3;
     pointer-events: none;
+    will-change: opacity;
+    contain: layout style;
   }
 }
 
